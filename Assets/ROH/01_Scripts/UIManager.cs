@@ -28,10 +28,12 @@ public class UIManager : MonoBehaviour
     /// </summary>
     void Start()
     {
+        // Start Screen
         _startButton.onClick.AddListener(OnClickStartButton);
 
-
+        // Main Screen
         _topBarToggleButton.onClick.AddListener(OnClickTopBarToggleButton);
+        _yesButton.onClick.AddListener(OnClickYesButton);
     }
 
 
@@ -52,12 +54,18 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private Button _topBarToggleButton;
     [SerializeField] private GameObject _topBar;
+    [SerializeField] private Button _yesButton;
 
     private void OnClickTopBarToggleButton()
     {
         // _topBar의 활성화 상태를 반대로 설정
         _topBar.SetActive(!_topBar.activeSelf);
 
+    }
+
+    private void OnClickYesButton()
+    {
+        GameManager.Instance.OnApplicationQuit();
     }
 
 
