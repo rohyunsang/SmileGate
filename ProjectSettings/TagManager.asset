@@ -9,6 +9,8 @@ TagManager:
   - Ground
   - Swamp
   - Rail
+  - Score
+  - Bone
   layers:
   - Default
   - TransparentFX
@@ -16,7 +18,7 @@ TagManager:
   - PostProcess
   - Water
   - UI
-  - 
+  - Camera
   - 
   - 
   - 

@@ -90,6 +90,19 @@ public class Ghost : MonoBehaviour
         if (curHP <= 0)
         {
             // Death Animation 
+            switch (type)
+            {
+                case Type.Blue:
+                    MainManager.instance.blueGhost++;
+                    break;
+                case Type.Sparkling:
+                    MainManager.instance.redGhost++;
+                    break;
+                case Type.Green:
+                    MainManager.instance.greenGhost++;
+                    break;
+
+            }
             Debug.Log("Death Ghost");
             Destroy(gameObject);
         }
