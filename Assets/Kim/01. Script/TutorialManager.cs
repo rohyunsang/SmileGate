@@ -1,16 +1,32 @@
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Video;
 
 public class TutorialManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public VideoPlayer videoPlayer;
+    public VideoClip clip;
+    public GameObject tutorialPanel;
+    private PlayerController pc;
+    private void Awake()
     {
-        
+        if (videoPlayer == null)
+            videoPlayer = FindFirstObjectByType<VideoPlayer>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        pc = MainManager.instance.playerController;
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Player"))
+        {
+            tutorialPanel.SetActive(true);
+            videoPlayer.clip = clip;
+            videoPlayer.Play();
+            Time.timeScale = 0;
+        }
     }
 }
