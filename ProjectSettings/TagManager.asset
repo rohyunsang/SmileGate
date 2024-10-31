@@ -2,8 +2,12 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
-  tags: []
+  serializedVersion: 3
+  tags:
+  - CinemachineTarget
+  - Ground
+  - Swamp
+  - Rail
   layers:
   - Default
   - TransparentFX
@@ -41,3 +45,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 2674700085
+    locked: 0
+  - name: Object
+    uniqueID: 3942435443
+    locked: 0
+  - name: Character
+    uniqueID: 447497035
+    locked: 0
+  - name: UI
+    uniqueID: 166940987
+    locked: 0
+  m_RenderingLayers:
+  - Default
