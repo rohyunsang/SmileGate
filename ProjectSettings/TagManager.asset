@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - Ghost
+  - CinemachineTarget
+  - Ground
+  - Swamp
+  - Rail
   layers:
   - Default
   - TransparentFX
@@ -41,6 +45,18 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2674700085
+    locked: 0
+  - name: Object
+    uniqueID: 3942435443
+    locked: 0
+  - name: Character
+    uniqueID: 447497035
+    locked: 0
+  - name: UI
+    uniqueID: 166940987
     locked: 0
   m_RenderingLayers:
   - Default
