@@ -72,4 +72,16 @@ public class PlayerController : MonoBehaviour
             CurrentState.OnStateUpdate();
         }
     }
+
+    public bool CheckAvailableState()
+    {
+        if (CurrentState == _idleState)
+            return true;
+
+        if (CurrentState == _moveState)
+            return true;
+
+        return false;
+
+    }
 }

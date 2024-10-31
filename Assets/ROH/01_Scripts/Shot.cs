@@ -2,11 +2,19 @@ using UnityEngine;
 
 public class Shot : MonoBehaviour
 {
-
+    private PlayerController controller;
     Vector3 m_vecMouseDownPos;
 
+
+    private void Start()
+    {
+        controller = MainManager.instance.playerController;
+    }
     void Update()
     {
+        if (!controller.CheckAvailableState())
+            return;
+
 #if UNITY_EDITOR
         // 마우스 클릭 시
         if (Input.GetMouseButtonDown(0))

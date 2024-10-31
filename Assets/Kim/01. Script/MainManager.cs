@@ -12,10 +12,20 @@ public class MainManager : MonoBehaviour
     [Header("# Score")]
     public int gameScore;
 
+    private float startTIme;
+
 
     private void Awake()
     {
         if(instance == null)
             instance = this;
+
+        startTIme = 0;
+    }
+
+    private void Update()
+    {
+        startTIme += Time.deltaTime;
+        Debug.Log(startTIme);
     }
 }

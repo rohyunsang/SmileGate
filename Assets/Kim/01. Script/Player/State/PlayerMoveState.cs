@@ -78,7 +78,20 @@ public class PlayerMoveState : MonoBehaviour, IPlayerState
             pc.anim.speed = 0.5f;
         }
 
-        if (collision.gameObject.CompareTag("Ground"))
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Swamp"))
+        {
+            swampCheckFlag = true;
+            pc.anim.speed = 0.5f;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Swamp"))
         {
             swampCheckFlag = false;
             pc.anim.speed = 1f;
