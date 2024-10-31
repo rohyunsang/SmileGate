@@ -23,6 +23,7 @@ public class Shot : MonoBehaviour
             if(Input.GetTouch(0).phase != TouchPhase.Began)
                 return;
 #endif
+            // if( FindObjectOfType<Player>().iSShot == false ) return;
 
             // 마우스 클릭 위치를 카메라 스크린 월드포인트로 변경합니다.
             Vector2 pos = Camera.main.ScreenToWorldPoint(m_vecMouseDownPos);
