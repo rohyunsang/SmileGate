@@ -4,10 +4,9 @@ using UnityEngine.UI;
 
 enum Type
 {   // Init HP 
-    Basic = 1, 
-    Blue = 3,
-    Sparkling = 4,
-    Red = 5 
+    Blue = 1,
+    Sparkling = 2,
+    Green = 3 
 }
 
 public class Ghost : MonoBehaviour
@@ -27,18 +26,15 @@ public class Ghost : MonoBehaviour
     {
         switch (type)
         {
-            case Type.Basic:
-                Init(1);
-                break;
             case Type.Blue:
-                Init(3);
+                Init(1);
                 break;
             case Type.Sparkling:
                 ghostImage = GetComponent<SpriteRenderer>();
-                Init(4);
+                Init(1);
                 break;
-            case Type.Red:
-                Init(5);
+            case Type.Green:
+                Init(2);
                 break;
             default:
                 break;
