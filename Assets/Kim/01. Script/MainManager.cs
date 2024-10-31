@@ -91,8 +91,8 @@ public class MainManager : MonoBehaviour
         Debug.Log(greenGhost * 50 + "점(초록유령)");
         Debug.Log(redGhost * 100 + "점(빨간유령)");
 
-        Debug.Log("총 점수 : " + (distanceScore * Mathf.Ceil(startTIme) + blueGhost * 30 + greenGhost * 50 + redGhost * 100));
-        finalScore = (distanceScore * Mathf.Ceil(startTIme) + blueGhost * 30 + greenGhost * 50 + redGhost * 100);
+        Debug.Log("총 점수 : " + (distanceScore * Mathf.Ceil(startTIme) + blueGhost * 30 + greenGhost * 50 + redGhost * 100 + healthScore * playerController.stat.healthCount));
+        finalScore = (distanceScore * Mathf.Ceil(startTIme) + blueGhost * 30 + greenGhost * 50 + redGhost * 100 + healthScore * playerController.stat.healthCount);
         text.text = finalScore.ToString() + " 점";
         CheckResult();
     }

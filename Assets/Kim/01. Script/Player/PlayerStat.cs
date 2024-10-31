@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerStat : MonoBehaviour
@@ -20,6 +21,7 @@ public class PlayerStat : MonoBehaviour
     {
         if(healthCount <= 0)
         {
+            SceneManager.LoadScene("Result");
             Debug.Log("Game Over");
         }
     }
