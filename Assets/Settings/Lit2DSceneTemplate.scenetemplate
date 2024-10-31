@@ -10,10 +10,8 @@ Texture2D:
   m_ImageContentsHash:
     serializedVersion: 2
     Hash: 3eb422a44b812e16b34078a6083bea48
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
   m_IsAlphaChannelOptional: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Width: 1068
   m_Height: 615
   m_CompleteImageSize: 1970460
@@ -22,7 +20,8 @@ Texture2D:
   m_MipCount: 1
   m_IsReadable: 1
   m_IsPreProcessed: 0
-  m_IgnoreMasterTextureLimit: 0
+  m_IgnoreMipmapLimit: 0
+  m_MipmapLimitGroupName: 
   m_StreamingMipmaps: 0
   m_StreamingMipmapsPriority: 0
   m_VTOnly: 0
@@ -65,7 +64,28 @@ MonoBehaviour:
     the 2D Renderer in Universal RP.
   preview: {fileID: -3604256930052969394}
   dependencies:
-  - dependency: {fileID: 2800000, guid: b3ab972b21db85d48ade9657efdd4771, type: 3}
-    instantiationMode: 1
+  - dependency: {fileID: 2800000, guid: 85e3b366cc43a412eaea4abb85da0cd3, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 37d1bdb3e1de647ae915d01a2b7def15, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: e08e6a2f34edd4a7db4285eeddef84a8, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 0a6ca078b274e43859b20657ebda9a05, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: c3b5f35ae691e4d719d7c458b48c7c28, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: fe6890c81e672497f963f4b292a7050a, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 88271ef8cb2f844a59750124ca3106a2, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 9b3027d3d57a94a07b8aed183f1dbfda, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 8be56079f98104befaf15e67184d36f1, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 4db7d20bea57942e9bc03f26f30c64a5, type: 3}
+    instantiationMode: 0
   templatePipeline: {fileID: 0}
+  badge: {fileID: 0}
   addToDefaults: 1
