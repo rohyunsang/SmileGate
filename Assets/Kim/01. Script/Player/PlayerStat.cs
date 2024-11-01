@@ -16,6 +16,14 @@ public class PlayerStat : MonoBehaviour
     public float swampEscapeForce;
     public float swampTimer;
 
+    [Header("# State")]
+    public bool downState;
+
+    private void Awake()
+    {
+        downState = false;
+    }
+
 
     private void Update()
     {

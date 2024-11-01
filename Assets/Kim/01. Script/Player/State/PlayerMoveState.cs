@@ -70,7 +70,7 @@ public class PlayerMoveState : MonoBehaviour, IPlayerState
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    /*private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Swamp"))
         {
@@ -78,9 +78,9 @@ public class PlayerMoveState : MonoBehaviour, IPlayerState
             pc.anim.speed = 0.5f;
         }
 
-    }
+    }*/
 
-    private void OnCollisionStay2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Swamp"))
         {
@@ -89,7 +89,16 @@ public class PlayerMoveState : MonoBehaviour, IPlayerState
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Swamp"))
+        {
+            swampCheckFlag = true;
+            pc.anim.speed = 0.5f;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Swamp"))
         {

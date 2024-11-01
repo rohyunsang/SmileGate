@@ -28,7 +28,12 @@ public class PlayerDownState : MonoBehaviour, IPlayerState
     // 바닥과의 충돌 감지
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Swamp"))
+        if (pc.stat.downState)
+            return;
+
+        collisionCheckFlag = true;
+
+        if (collision.gameObject.CompareTag("Ground"))
         {
             collisionCheckFlag = true;
         }
