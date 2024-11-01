@@ -10,6 +10,7 @@ public class PlayerJumpState : MonoBehaviour, IPlayerState
 
         pc.rigidBody.AddForceY(pc.stat.jumpSpeed, ForceMode2D.Impulse);
         pc.anim.SetBool("Jump", true);
+        AudioManager.Instance.PlaySfx(AudioManager.SFX.SFX_JUMP);
     }
 
     public void OnStateUpdate()

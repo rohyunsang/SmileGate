@@ -11,6 +11,7 @@ TagManager:
   - Rail
   - Score
   - Bone
+  - RailHole
   layers:
   - Default
   - TransparentFX

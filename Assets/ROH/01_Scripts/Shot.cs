@@ -12,12 +12,12 @@ public class Shot : MonoBehaviour
     }
     void Update()
     {
-        if (!controller.CheckAvailableState())
-            return;
 
         // 마우스 클릭 시
         if (Input.GetMouseButtonDown(0))
         {
+            AudioManager.Instance.PlaySfx(AudioManager.SFX.SFX_SHOT);
+
             // 마우스 클릭 위치를 저장
             m_vecMouseDownPos = Input.mousePosition;
 
@@ -29,6 +29,11 @@ public class Shot : MonoBehaviour
 
             if (hit.collider != null && hit.collider.gameObject.tag == "Ghost")
             {
+                int randNum = Random.Range(0, 2);
+                if (randNum == 0)
+                    AudioManager.Instance.PlaySfx(AudioManager.SFX.SFX_DOG1);
+                else if (randNum == 1)
+                    AudioManager.Instance.PlaySfx(AudioManager.SFX.SFX_DOG2);
                 hit.collider.gameObject.GetComponent<Ghost>().TakeDamage(1);
             }
         }

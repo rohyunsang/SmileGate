@@ -89,6 +89,8 @@ public class Ghost : MonoBehaviour
 
         if (curHP <= 0)
         {
+            GameObject hitvfx = Instantiate(MainManager.instance.hitEffect, this.transform.position, Quaternion.identity);
+            hitvfx.transform.SetParent(MainManager.instance.pool);
             // Death Animation 
             switch (type)
             {

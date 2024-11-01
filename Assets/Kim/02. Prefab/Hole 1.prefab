@@ -73,9 +73,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1620267211
+  m_SortingLayer: 1
+  m_SortingOrder: 1
   m_Sprite: {fileID: -8306571561721667807, guid: b6ee5c62c75f74f4c8ece9395986752a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -87,6 +87,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &5081929952675841103
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2323838918459809497}
+  m_Layer: 0
+  m_Name: rail Respawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2323838918459809497
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5081929952675841103}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.139984, y: 5.98, z: -0.15615149}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2473794346335432540}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5630857192575663426
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,9 +191,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1620267211
+  m_SortingLayer: 1
+  m_SortingOrder: 1
   m_Sprite: {fileID: -8306571561721667807, guid: b6ee5c62c75f74f4c8ece9395986752a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -278,9 +309,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1620267211
+  m_SortingLayer: 1
+  m_SortingOrder: 1
   m_Sprite: {fileID: -8306571561721667807, guid: c3f18c70214f5b04095683c20213558f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -365,9 +396,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1620267211
+  m_SortingLayer: 1
+  m_SortingOrder: 1
   m_Sprite: {fileID: -8306571561721667807, guid: 9c6c88ed496bae540a3dba17218eed9b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -392,7 +423,7 @@ GameObject:
   - component: {fileID: 2445967948294673101}
   m_Layer: 0
   m_Name: Hole 1
-  m_TagString: Untagged
+  m_TagString: RailHole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -415,6 +446,7 @@ Transform:
   - {fileID: 3859317385196505679}
   - {fileID: 6879771557460873933}
   - {fileID: 7573025298185488462}
+  - {fileID: 2323838918459809497}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3488666164351772133
@@ -431,6 +463,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 7573025298185488462}
   target: {fileID: 0}
+  railRespawnPoint: {fileID: 2323838918459809497}
+  rail: {fileID: 0}
+  railController: {fileID: 0}
 --- !u!61 &2445967948294673101
 BoxCollider2D:
   m_ObjectHideFlags: 0

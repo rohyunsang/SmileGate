@@ -35,6 +35,10 @@ public class MainManager : MonoBehaviour
     public Sprite fiveBone;
     private Image boneImage;
 
+    [Header("# Prefab")]
+    public GameObject hitEffect;
+    public Transform pool;
+
 
     private float finalScore;
     private float startTIme;
@@ -58,6 +62,11 @@ public class MainManager : MonoBehaviour
         greenGhost = 0;
         redGhost = 0;
         SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void Start()
+    {
+        AudioManager.Instance.PlayBgm(AudioManager.BGM.BGM_NormalStage1);
     }
 
     private void Update()

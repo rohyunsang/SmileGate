@@ -31,19 +31,8 @@ public class AudioManager : MonoBehaviour
                                                         // 배경음악(BGM) 클립
     public enum BGM
     {
-        BGM_Lobby = 0,
+        BGM_Title = 0,
         BGM_NormalStage1 = 1,
-        BGM_NormalStage4 = 2,
-        BGM_NormalStage5 = 3,
-        BGM_NormalStage7 = 4,
-        BGM_NormalStage8 = 5,
-        BGM_NormalStage10 = 6,
-        BGM_ChaosStage1 = 7,
-        BGM_ChaosStage4 = 8,
-        BGM_ChaosStage5 = 9,
-        BGM_ChaosStage7 = 10,
-        BGM_ChaosStage8 = 11,
-        BGM_ChaosStage10 = 12,
     }
 
     [Header("#SFX")]
@@ -56,29 +45,11 @@ public class AudioManager : MonoBehaviour
     public enum SFX
     {
         // UI
-        SFX_UI_ClickSound = 0,
-        SFX_PurchaseSound = 1,
-        SFX_StageFailSound = 2,
-        SFX_StageClearSound = 3,
-        SFX_BattleStartSound = 4,
+        SFX_JUMP = 0,
+        SFX_SHOT = 1,
+        SFX_DOG1 = 2,
+        SFX_DOG2 = 3,
 
-        // Skills
-        SFX_SkillSoundIncreaseAttack = 5,
-        SFX_SkillSoundCannon = 6,
-        SFX_SkillSoundMeteor = 7,
-        SFX_SkillSoundRanged = 8,
-        SFX_SkillSoundHeal = 9,
-
-        // Basic actions
-        SFX_BasicAttackSound = 10,
-        SFX_SlimeDeathSound = 11,
-        SFX_ObjectAttackSound = 12,
-        SFX_ObjectOpenSound = 13,
-        SFX_EnemyDeathSound = 14,
-        SFX_BowShootSound = 15,
-
-        // 디폴트
-        SFX_None = 16
     }
 
     public float BGMVolume
