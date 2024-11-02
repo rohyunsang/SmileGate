@@ -1,0 +1,456 @@
+fileFormatVersion: 2
+guid: 6f92c690ab0af6449b9ad292e7f229c3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7066960290371527752
+    second: effact_0
+  - first:
+      213: 5295053350257328686
+    second: effact_1
+  - first:
+      213: -3913277364013206816
+    second: effact_2
+  - first:
+      213: -761276193100733406
+    second: effact_3
+  - first:
+      213: -47772024649518155
+    second: effact_4
+  - first:
+      213: 6344594791142071350
+    second: effact_5
+  - first:
+      213: -8501088783966676816
+    second: effact_6
+  - first:
+      213: 5000522545456456195
+    second: effact_7
+  - first:
+      213: -7107945623952440417
+    second: effact_8
+  - first:
+      213: 3045648974266024710
+    second: effact_9
+  - first:
+      213: 2249418417916093661
+    second: effact_10
+  - first:
+      213: 1232376535201557291
+    second: effact_11
+  - first:
+      213: 5685197898101527619
+    second: effact_12
+  - first:
+      213: -8228537442077760183
+    second: effact_13
+  - first:
+      213: 8340570691983749164
+    second: effact_14
+  - first:
+      213: -4281360853372352382
+    second: effact_15
+  - first:
+      213: 3829184570609759263
+    second: effact_16
+  - first:
+      213: 4778912691376022280
+    second: effact_17
+  - first:
+      213: 4971527298201109029
+    second: effact_18
+  - first:
+      213: 804386943805085396
+    second: effact_19
+  - first:
+      213: -5813909053015888686
+    second: effact_20
+  - first:
+      213: -5916370615382181552
+    second: effact_21
+  - first:
+      213: -8887974253976232234
+    second: effact_22
+  - first:
+      213: 7535585364962050691
+    second: effact_23
+  - first:
+      213: -8247230799551982086
+    second: effact_24
+  - first:
+      213: 7381509015040913676
+    second: effact_25
+  - first:
+      213: 8081823582789456509
+    second: effact_26
+  - first:
+      213: 6647663951477301598
+    second: effact_27
+  - first:
+      213: 7688347679211772985
+    second: effact_28
+  - first:
+      213: -4368164146437680761
+    second: effact_29
+  - first:
+      213: -288594254813858938
+    second: effact_30
+  - first:
+      213: -6950405318250663698
+    second: effact_31
+  - first:
+      213: -5492695324228286241
+    second: effact_32
+  - first:
+      213: 289235477062126511
+    second: effact_33
+  - first:
+      213: 8142644433717006793
+    second: effact_34
+  - first:
+      213: 1483854249947270264
+    second: effact_35
+  - first:
+      213: -4950644750026482994
+    second: effact_36
+  - first:
+      213: 6326522005733231723
+    second: effact_37
+  - first:
+      213: -1215144169141848770
+    second: effact_38
+  - first:
+      213: 5918616574851879551
+    second: effact_39
+  - first:
+      213: -9191408418666072088
+    second: effact_40
+  - first:
+      213: 6684216349334291177
+    second: effact_41
+  - first:
+      213: -3206619645004980700
+    second: effact_42
+  - first:
+      213: 3719926202748748836
+    second: effact_43
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: effact_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 844e26511f2e21260800000000000000
+      internalID: 7066960290371527752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effact_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2284d8b7fecb7940800000000000000
+      internalID: 5295053350257328686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effact_2
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e27a6a88fe31b9c0800000000000000
+      internalID: -3913277364013206816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effact_3
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 224e446f5576f65f0800000000000000
+      internalID: -761276193100733406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effact_4
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b37090c897465ff0800000000000000
+      internalID: -47772024649518155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effact_5
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63c11d1f8578c0850800000000000000
+      internalID: 6344594791142071350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effact_6
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b8db9baac0160a80800000000000000
+      internalID: -8501088783966676816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effact_7
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 0
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 302a34dd2cc656540800000000000000
+      internalID: 5000522545456456195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effact_8
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f93c5815d118b5d90800000000000000
+      internalID: -7107945623952440417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c73b3d5e59d24bb439348f7048babd99
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      effact_0: 7066960290371527752
+      effact_1: 5295053350257328686
+      effact_2: -3913277364013206816
+      effact_3: -761276193100733406
+      effact_4: -47772024649518155
+      effact_5: 6344594791142071350
+      effact_6: -8501088783966676816
+      effact_7: 5000522545456456195
+      effact_8: -7107945623952440417
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
