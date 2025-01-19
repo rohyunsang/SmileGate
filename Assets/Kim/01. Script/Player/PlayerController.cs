@@ -5,11 +5,10 @@ public class PlayerController : MonoBehaviour
     public static PlayerController instance;
 
     [Header("# Component")]
-    public Rigidbody2D rigidBody;
-    public Animator anim;
-    public SpriteRenderer spriteRenderer;
-
-    public PlayerStat stat;
+    [HideInInspector] public Rigidbody2D rigidBody;
+    [HideInInspector] public Animator anim;
+    [HideInInspector] public SpriteRenderer spriteRenderer;
+    [HideInInspector] public PlayerStat stat;
 
     public IPlayerState _idleState, _moveState, _jumpState, _downState, _holdState, _middleState;
     public IPlayerState CurrentState
@@ -23,19 +22,10 @@ public class PlayerController : MonoBehaviour
         if (instance == null)
             instance = this;
 
-        if(rigidBody == null)
-            rigidBody = GetComponent<Rigidbody2D>();
-
-        if (anim == null)
-            anim = GetComponent<Animator>();
-
-        if(spriteRenderer == null)
-            spriteRenderer = GetComponent<SpriteRenderer>();
-
-        if (stat == null)
-        {
-            Debug.Log(stat);
-        }
+        rigidBody = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        stat = GetComponent<PlayerStat>();
         #endregion
 
         #region Init State
@@ -59,31 +49,18 @@ public class PlayerController : MonoBehaviour
 
     public void ChangeState(IPlayerState playerState)
     {
-        if (CurrentState != null)
-        {
-            CurrentState.OnStateExit();
-        }
+        CurrentState?.OnStateExit();
         CurrentState = playerState;
         CurrentState.OnStateEnter(this);
     }
 
     void UpdateState()
     {
-        if (CurrentState != null)
-        {
-            CurrentState.OnStateUpdate();
-        }
+        CurrentState?.OnStateUpdate();
     }
 
     public bool CheckAvailableState()
     {
-        if (CurrentState == _idleState)
-            return true;
-
-        if (CurrentState == _moveState)
-            return true;
-
-        return false;
-
+        return (CurrentState == _idleState || CurrentState == _moveState);
     }
 }
