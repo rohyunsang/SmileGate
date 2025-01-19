@@ -25,11 +25,12 @@ public class PlayerDownState : MonoBehaviour, IPlayerState
         pc.anim.SetBool("Down", false);
     }
 
-    // ¹Ù´Ú°úÀÇ Ãæµ¹ °¨Áö
+    // ï¿½Ù´Ú°ï¿½ï¿½ï¿½ ï¿½æµ¹ ï¿½ï¿½ï¿½ï¿½
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (pc.stat.downState)
-            return;
+        // Debug.Log(pc.stat);
+        // if (pc.stat.downState)
+        //     return;
 
         collisionCheckFlag = true;
 

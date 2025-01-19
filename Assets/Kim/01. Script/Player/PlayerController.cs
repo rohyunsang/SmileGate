@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     public Animator anim;
     public SpriteRenderer spriteRenderer;
 
-    [HideInInspector] public PlayerStat stat;
+    public PlayerStat stat;
 
     public IPlayerState _idleState, _moveState, _jumpState, _downState, _holdState, _middleState;
     public IPlayerState CurrentState
@@ -33,7 +33,9 @@ public class PlayerController : MonoBehaviour
             spriteRenderer = GetComponent<SpriteRenderer>();
 
         if (stat == null)
-            stat = FindFirstObjectByType<PlayerStat>();
+        {
+            Debug.Log(stat);
+        }
         #endregion
 
         #region Init State

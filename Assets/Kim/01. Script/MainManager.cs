@@ -75,7 +75,6 @@ public class MainManager : MonoBehaviour
             return;
 
         startTIme += Time.deltaTime;
-        Debug.Log(startTIme);
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
